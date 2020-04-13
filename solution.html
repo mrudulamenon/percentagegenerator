@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progress Card Generator</title>
-    <link rel="stylesheet" href="/styleSolutions.css">
+    <link rel="stylesheet" href="styleSolutions.css">
 
 </head>
 <body>
-    <div>
+    <div class="inputArea">
         <!--You dont have to provide style in this div-->
-        <form>
+        
             <label for="Name">Enter Student Name</label><br>
             <input type="text" id = "name"><br>
             <label for="">Enter Class</label><br>
@@ -24,16 +24,18 @@
             <label for="">Mark obtained in subject-3</label><br>
             <input type="number"  id="mark3">/100<br>
             <p>Click the button below to create Percentage Card</p>
-            <button id="btnSubmit" onclick="getPercentage()">Generate Card</button>
-          </form>
+            <button id="btnSubmit" onclick="getPercentage();">Generate Card</button>
+       
           <!--Use the data from above input fileds to generate a card -->
     </div>   
-
-<div>
+    <!-- hidden="true" -->
+<div id="divReportCard">
 <!--Write your codes from here-->
 <h1 id="cardHead"></h1>
 
-<p id="displayPara"></p>
+<p id="displayPara">
+    <span id="avgDisplay"></span>
+</p>
 </div>
 
 
