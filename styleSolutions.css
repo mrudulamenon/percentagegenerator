@@ -1,7 +1,25 @@
 /* You can write your codes here  */
+body
+{
+    background-color: cadetblue;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 10%;
+
+}
 .inputArea{
-    border: solid blue 4px;
     
+    background-color: cornflowerblue;
+    border: solid blue 4px; 
+    text-align: center;
+    
+}
+#btnSubmit{
+    height: 35px;
+    width: 150px;
+    margin: 15px;
+    background-color: darkorchid;
+
 }
 
 #cardHead{

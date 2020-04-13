@@ -23,15 +23,16 @@ function getPercentage()
     var sub3 = parseFloat(document.getElementById("mark3").value);
     var percentage = parseInt((sub1 + sub2 + sub3)/3);
     //alert ("Percentage is "+ percentage);
-    alert(studName);
+    //alert(studName);
 
     // setting style 
     divCard.style.border = "solid red 4px";
     divCard.style.backgroundColor = "aqua";
     divCard.style.padding="5%";
+    //avgSpan.bold();
 
     head.innerText="Percentage Card";
-    studPara.innerText="The percentage obtained by your ward" + studName + " of Class " +studClass + " with RollNo" + studRollNo + "has scored";
+    studPara.innerText="The percentage obtained by your ward  " + studName + " of Class " +studClass + " with RollNo : " + studRollNo + " has scored ";
     avgSpan.innerText= percentage;
     if(percentage<40)
     { avgSpan.style.color="red"; }
